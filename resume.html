@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résumé — [YOUR NAME]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#1b1c20; --sub:#555862; --line:#d9d5cd; --accent:#9a6b21; --paper:#fbfaf7; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#e9e7e2; color:var(--ink); font:15px/1.6 'Inter',Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+    .toolbar { position:sticky; top:0; z-index:9; background:rgba(233,231,226,.94); backdrop-filter:blur(10px); border-bottom:1px solid #d4d0c8; padding:12px 20px; display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; }
+    .toolbar span { font-size:12px; color:var(--sub); margin-right:8px; }
+    .btn { border:1px solid var(--ink); background:var(--ink); color:#fff; padding:9px 18px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; }
+    .btn.light { background:transparent; color:var(--ink); }
+    .btn:hover { opacity:.85; }
+    .paper { width:min(860px,calc(100% - 32px)); margin:28px auto 60px; background:var(--paper); padding:58px 62px 64px; box-shadow:0 18px 50px rgba(0,0,0,.12); }
+    .r-head { border-bottom:3px double var(--ink); padding-bottom:22px; }
+    .r-head h1 { font:700 40px/1 'Playfair Display',Georgia,serif; letter-spacing:-.02em; margin:0 0 6px; }
+    .r-role { color:var(--accent); font-size:13px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+    .r-contact { margin-top:14px; font-size:12px; color:var(--sub); display:flex; flex-wrap:wrap; gap:6px 18px; }
+    .r-contact a { color:var(--accent); text-decoration:none; }
+    .r-grid { display:grid; grid-template-columns:1fr 220px; gap:38px; margin-top:30px; }
+    h2 { font:700 12px/1 'Inter',sans-serif; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin:0 0 14px; padding-bottom:7px; border-bottom:1px solid var(--line); }
+    section { margin-bottom:28px; }
+    p { margin:0 0 10px; }
+    .job { margin-bottom:20px; }
+    .job-top { display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+    .job h3 { font-size:15px; margin:0; }
+    .job .when { font-size:11px; color:var(--sub); white-space:nowrap; }
+    .job .org { font-size:12px; color:var(--accent); font-weight:600; margin:2px 0 8px; }
+    ul { margin:0; padding-left:17px; }
+    li { margin-bottom:5px; }
+    .skills { display:flex; flex-wrap:wrap; gap:6px; }
+    .skills span { background:#efece5; border:1px solid var(--line); border-radius:4px; padding:4px 8px; font-size:11px; }
+    .facts { border-left:3px solid var(--accent); padding-left:14px; }
+    .fact { margin-bottom:14px; }
+    .fact b { font:700 22px/1 'Playfair Display',Georgia,serif; color:var(--accent); display:block; }
+    .fact small { color:var(--sub); font-size:11px; }
+    .placeholder { background:#fff3c4; padding:0 2px; border-radius:2px; }
+    .foot { margin-top:26px; padding-top:14px; border-top:1px solid var(--line); font-size:10px; color:var(--sub); text-align:center; letter-spacing:.08em; }
+    @media (max-width:720px){ .paper{padding:32px 24px} .r-grid{grid-template-columns:1fr} .r-head h1{font-size:32px} }
+    @media print {
+      @page { size:A4; margin:14mm; }
+      body { background:#fff; }
+      .toolbar { display:none; }
+      .paper { width:100%; margin:0; padding:0; box-shadow:none; }
+      section { break-inside:avoid; }
+      .placeholder { background:transparent; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <span>Tip: replace every highlighted field before sending this out.</span>
+    <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+    <a class="btn light" href="index.html">← Back to portfolio</a>
+    <a class="btn light" href="RESUME.md">Markdown version</a>
+  </div>
+
+  <div class="paper">
+    <header class="r-head">
+      <h1>[YOUR NAME]</h1>
+      <div class="r-role">Video Editor · Storyteller</div>
+      <div class="r-contact">
+        <span>[EMAIL]</span><span>[PHONE]</span><span>[LOCATION]</span>
+        <a href="[LINKEDIN URL]">LinkedIn</a>
+        <a href="https://github.com/Burnekboi">GitHub</a>
+        <a href="[PORTFOLIO URL]">Portfolio</a>
+      </div>
+    </header>
+
+    <div class="r-grid">
+      <div>
+        <section>
+          <h2>Profile</h2>
+          <p>Video editor with a focus on serialized screen storytelling, short-form character work and AI-assisted production workflows. Experienced in taking projects from a library of raw shots to a finished, coherent episode — owning assembly, continuity, pacing, sound and final delivery. Comfortable working at high shot counts and across both cinematic and vertical formats.</p>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <div class="job">
+            <div class="job-top"><h3>Video Editor — The Last Human Heir</h3><span class="when">[START] – [END]</span></div>
+            <div class="org">Independent / Self-directed · Science-fiction drama series</div>
+            <ul>
+              <li>Edited <strong>17 finished episodes</strong> totaling roughly 18 minutes of narrative output from a library of 60+ generated scene shots.</li>
+              <li>Built episode structure and scene order from scratch, establishing pacing and dramatic reveals across a multi-episode arc.</li>
+              <li>Maintained character, location and prop continuity for a recurring cast including Adrian Vale, Mira, Lucian and Marcus.</li>
+              <li>Handled sound design, music cueing, color treatment and final export for all episodes.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="job-top"><h3>Creator &amp; Editor — Cino Shorts</h3><span class="when">[START] – [END]</span></div>
+            <div class="org">Vertical short-form series · Character comedy / adventure</div>
+            <ul>
+              <li>Created and edited a recurring short-form series built around the character Cino, including three full-length installments.</li>
+              <li>Produced 60+ individual performance and reaction shots, then selected and assembled them into coherent, character-driven scenes.</li>
+              <li>Adapted framing and pacing for vertical viewing while preserving a cinematic visual language.</li>
+              <li>Designed intro and outro sequences that gave the series a consistent identity.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <div class="job-top"><h3>[PREVIOUS ROLE / FREELANCE CLIENT]</h3><span class="when">[DATES]</span></div>
+            <div class="org">[COMPANY OR CLIENT]</div>
+            <ul>
+              <li>[Describe the deliverable, your responsibility and the outcome.]</li>
+              <li>[Add a measurable result — turnaround time, views, views retained, episode count, etc.]</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Selected Projects</h2>
+          <div class="job">
+            <div class="job-top"><h3>The Last Human Heir — Feature Series</h3><span class="when">17 episodes</span></div>
+            <p>A serialized sci-fi drama about family, dispossession and hidden origins. Full editing ownership from shot library to final episode.</p>
+          </div>
+          <div class="job">
+            <div class="job-top"><h3>Cino — Character Shorts</h3><span class="when">64 videos</span></div>
+            <p>A wanderer in a ruined, robot-populated world. Three complete short films plus a shot-level library for ongoing episodes.</p>
+          </div>
+          <div class="job">
+            <div class="job-top"><h3>Scene Library &amp; Continuity System</h3><span class="when">60 shots</span></div>
+            <p>An organized, character-referenced shot archive that made it possible to keep a long-running series visually consistent.</p>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section>
+          <h2>By the numbers</h2>
+          <div class="facts">
+            <div class="fact"><b>17</b><small>finished episodes</small></div>
+            <div class="fact"><b>142</b><small>videos &amp; shots</small></div>
+            <div class="fact"><b>64</b><small>character short assets</small></div>
+            <div class="fact"><b>36 min</b><small>total runtime</small></div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Core skills</h2>
+          <div class="skills">
+            <span>Story editing</span><span>Pacing</span><span>Continuity</span><span>Sound design</span>
+            <span>Color grading</span><span>Short-form</span><span>Character work</span><span>Titles</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tools</h2>
+          <div class="skills">
+            <span>Adobe Premiere Pro</span><span>CapCut</span><span>FFmpeg</span><span>AI-assisted footage</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <p><strong>[DEGREE]</strong><br>[UNIVERSITY]<br>[YEAR]</p>
+          <p><strong>[CERTIFICATION]</strong><br>[INSTITUTION], [YEAR]</p>
+        </section>
+
+        <section>
+          <h2>Languages</h2>
+          <p>[LANGUAGE — FLUENCY]<br>[LANGUAGE — FLUENCY]</p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="foot">[YOUR NAME] · Video Editing Portfolio · References available on request</div>
+  </div>
+
+</body>
+</html>

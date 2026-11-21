@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[YOUR NAME] — Video Editing Portfolio</title>
+  <meta name="description" content="Video editing portfolio of [YOUR NAME] — serialized sci-fi, character shorts and AI-assisted visual storytelling from The Last Human Heir universe.">
+  <meta property="og:title" content="[YOUR NAME] — Video Editing Portfolio">
+  <meta property="og:description" content="17 episodes. 142 videos. Stories built frame by frame.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Back to top">
+        <span class="brand-mark">F</span>
+        <span>FRAME / WORK<br><small>Video Editing</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#characters">Characters</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="resume.html" class="nav-cta">View résumé ↗</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <span class="kicker">Video Editor · Storyteller</span>
+      <h1>Stories built<br><em>frame by frame.</em></h1>
+      <p class="hero-lead">
+        Hi, I'm <strong>[YOUR NAME]</strong> — a video editor drawn to science fiction,
+        character-driven shorts and the craft of turning raw shots into a world that feels lived in.
+        The work below comes from <strong>The Last Human Heir</strong>, a serialized sci-fi universe
+        assembled from over a hundred individual shots.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">
+          Explore the work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="resume.html" class="btn btn-ghost">Résumé &amp; experience</a>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span>Scroll to explore</div>
+  </header>
+
+  <!-- ============ STATS ============ -->
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><div class="stat-num" id="statEpisodes">17</div><div class="stat-label">Finished episodes</div></div>
+      <div class="stat"><div class="stat-num" id="statVideos">142</div><div class="stat-label">Videos &amp; shots</div></div>
+      <div class="stat"><div class="stat-num" id="statMinutes">36</div><div class="stat-label">Minutes delivered</div></div>
+      <div class="stat"><div class="stat-num" id="statGB">1.42</div><div class="stat-label">GB of footage shaped</div></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">01 / Selected Work</span>
+          <h2 class="section-title">From first cut to final frame.</h2>
+          <p class="section-sub">Feature episodes, a recurring character short series, and the individual shots that make the world feel continuous. Click any card to play.</p>
+        </div>
+
+        <div class="featured-grid reveal" id="featured-grid"></div>
+
+        <!-- Catalogue -->
+        <div class="browser reveal">
+          <div class="browser-top">
+            <div class="filters">
+              <button class="chip active" data-filter="all">All <span class="count">142</span></button>
+              <button class="chip" data-filter="series">Features <span class="count">18</span></button>
+              <button class="chip" data-filter="cino">Cino Shorts <span class="count">64</span></button>
+              <button class="chip" data-filter="scenes">Scene Library <span class="count">60</span></button>
+            </div>
+            <div class="browser-tools">
+              <input class="search" id="video-search" type="search" placeholder="Search shots, characters, scenes…" aria-label="Search videos">
+              <select class="sort" id="video-sort" aria-label="Sort videos">
+                <option value="order">Default order</option>
+                <option value="title">Title A–Z</option>
+                <option value="duration">Longest first</option>
+                <option value="size">Largest first</option>
+              </select>
+            </div>
+          </div>
+          <div class="result-count" id="result-count"></div>
+          <div class="video-grid" id="video-grid"></div>
+          <div class="load-more-wrap" id="load-more-wrap">
+            <button class="btn btn-ghost" id="load-more">Load more videos</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">02 / How I Work</span>
+          <h2 class="section-title">A workflow built for story.</h2>
+          <p class="section-sub">Every project is different, but the through-line is the same: find the story in the footage, then remove everything that gets in its way.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-item reveal">
+            <div class="process-num">01</div>
+            <h3>Assemble &amp; structure</h3>
+            <p>Build the episode from the shot library, finding the performance and rhythm before polishing a single frame.</p>
+          </div>
+          <div class="process-item reveal">
+            <div class="process-num">02</div>
+            <h3>Continuity &amp; world</h3>
+            <p>Track character references, locations and props across episodes so the world stays coherent from scene one to seventeen.</p>
+          </div>
+          <div class="process-item reveal">
+            <div class="process-num">03</div>
+            <h3>Pacing &amp; sound</h3>
+            <p>Shape timing, dialogue rhythm and atmosphere with sound design and music — the invisible half of every cut.</p>
+          </div>
+          <div class="process-item reveal">
+            <div class="process-num">04</div>
+            <h3>Finish &amp; deliver</h3>
+            <p>Color, titles, grain and export settings tuned for the platform, whether that's a cinematic episode or a vertical short.</p>
+          </div>
+        </div>
+        <div class="workspace-strip reveal" aria-label="Editing workspace snapshots">
+          <img src="assets/art/workspace-1.jpg" alt="Editing timeline snapshot" loading="lazy">
+          <img src="assets/art/workspace-2.jpg" alt="Editing timeline snapshot" loading="lazy">
+          <img src="assets/art/workspace-3.jpg" alt="Editing timeline snapshot" loading="lazy">
+          <img src="assets/art/workspace-4.jpg" alt="Editing timeline snapshot" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHARACTERS ============ -->
+    <section class="section" id="characters">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">03 / The Universe</span>
+          <h2 class="section-title">Characters worth cutting for.</h2>
+          <p class="section-sub">A recurring cast gives an edit its emotional spine. These are the faces I built continuity around across the series and shorts.</p>
+        </div>
+        <div class="char-grid">
+          <article class="char-card reveal">
+            <img src="assets/art/cino.webp" alt="Cino character reference" loading="lazy">
+            <div class="char-info"><h3>Cino</h3><p>The curious wanderer at the heart of the vertical shorts — a small character carrying a very big world.</p></div>
+          </article>
+          <article class="char-card reveal">
+            <img src="assets/art/adrian.jpg" alt="Adrian Vale character reference" loading="lazy">
+            <div class="char-info"><h3>Adrian Vale</h3><p>The series' central figure: disowned, searching, and slowly uncovering the truth about his family.</p></div>
+          </article>
+          <article class="char-card reveal">
+            <img src="assets/art/mira.webp" alt="Mira character reference" loading="lazy">
+            <div class="char-info"><h3>Mira</h3><p>A presence from the past whose revelations drive the late-season episodes.</p></div>
+          </article>
+          <article class="char-card reveal">
+            <img src="assets/art/marcus.jpg" alt="Marcus character reference" loading="lazy">
+            <div class="char-info"><h3>Marcus</h3><p>A conflicted voice in the ensemble, caught between duty and confession.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-sm" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">04 / Toolkit</span>
+          <h2 class="section-title">What I bring to the timeline.</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-group reveal">
+            <h3>Editing</h3>
+            <div class="tags"><span class="tag">Story editing</span><span class="tag">Pacing &amp; rhythm</span><span class="tag">Continuity</span><span class="tag">Scene assembly</span><span class="tag">Recut &amp; revision</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Finishing</h3>
+            <div class="tags"><span class="tag">Color grading</span><span class="tag">Titles &amp; typography</span><span class="tag">Grain &amp; texture</span><span class="tag">Aspect-ratio adaptation</span><span class="tag">Delivery &amp; export</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Sound</h3>
+            <div class="tags"><span class="tag">Dialogue cleanup</span><span class="tag">Sound design</span><span class="tag">Music cueing</span><span class="tag">Atmosphere</span><span class="tag">Mix balance</span></div>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Tools &amp; workflow</h3>
+            <div class="tags"><span class="tag">Adobe Premiere Pro</span><span class="tag">CapCut</span><span class="tag">FFmpeg</span><span class="tag">AI-assisted footage</span><span class="tag">Character reference tracking</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME PREVIEW ============ -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">05 / Résumé</span>
+          <h2 class="section-title">The short version.</h2>
+          <p class="section-sub">A quick look at the experience. The full, printable résumé is one click away.</p>
+        </div>
+        <div class="resume-preview">
+          <div class="resume-box reveal">
+            <h3>[YOUR NAME]</h3>
+            <div class="role">Video Editor · [JOB TITLE]</div>
+            <p style="color:var(--muted);font-size:13px;margin-top:14px">[EMAIL] · [PHONE] · [LOCATION] · [LINKEDIN / PORTFOLIO URL]</p>
+            <div class="timeline">
+              <div class="tl-item">
+                <h4>Video Editor — The Last Human Heir</h4>
+                <div class="when">Independent / Self-directed · [DATES]</div>
+                <p>Edited a 17-episode serialized science-fiction drama from a 60+ shot scene library. Owned assembly, continuity, pacing, sound design and final color; built a recurring four-character throughline across seasons.</p>
+              </div>
+              <div class="tl-item">
+                <h4>Creator &amp; Editor — Cino Shorts</h4>
+                <div class="when">Vertical short-form series · [DATES]</div>
+                <p>Wrote and edited a character-led short series for vertical platforms, including three full-length installments and 60+ individual performance and reaction shots. Adapted pacing and framing for mobile viewing.</p>
+              </div>
+              <div class="tl-item">
+                <h4>[PREVIOUS ROLE / FREELANCE CLIENT]</h4>
+                <div class="when">[COMPANY] · [DATES]</div>
+                <p>[One or two lines about the role, the deliverables and the result. Quantify wherever you can.]</p>
+              </div>
+            </div>
+          </div>
+          <aside class="resume-side resume-box reveal">
+            <h3>Core strengths</h3>
+            <ul>
+              <li>Serial storytelling &amp; episode structure</li>
+              <li>Character continuity across 17 episodes</li>
+              <li>Short-form / vertical adaptation</li>
+              <li>Sound design &amp; music cueing</li>
+              <li>AI-assisted visual production</li>
+              <li>Fast turnaround on high shot counts</li>
+            </ul>
+            <h3>Education</h3>
+            <ul>
+              <li>[DEGREE] — [UNIVERSITY], [YEAR]</li>
+              <li>[CERTIFICATION / COURSE], [YEAR]</li>
+            </ul>
+            <div class="resume-actions">
+              <a class="btn btn-primary" href="resume.html">Full résumé</a>
+              <a class="btn btn-ghost" href="RESUME.md">Markdown</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container-narrow reveal">
+        <span class="kicker">06 / Get in touch</span>
+        <h2>Let's make something<br>worth watching.</h2>
+        <p>Available for editing work, collaborations and conversations about stories that deserve a great cut.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:[EMAIL]">Email me</a>
+          <a class="btn btn-ghost" href="[LINKEDIN URL]">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Burnekboi">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> [YOUR NAME]. Built frame by frame.</span>
+      <span>Portfolio · <a href="https://github.com/Burnekboi/video-editing-portfolio">Source</a> · <a href="https://github.com/Burnekboi/last-human-heir-media">Media repository</a></span>
+    </div>
+  </footer>
+
+  <!-- ============ VIDEO MODAL ============ -->
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="modal-shell">
+      <div class="modal-head">
+        <div>
+          <h3 id="modal-title">Video</h3>
+          <p id="modal-meta"></p>
+        </div>
+        <button class="modal-close" id="modal-close" aria-label="Close video">×</button>
+      </div>
+      <video class="modal-video" id="modal-video" controls playsinline preload="none"></video>
+      <div class="modal-foot">
+        <a class="btn btn-primary" id="modal-newtab" href="#" target="_blank" rel="noopener">Open video in new tab ↗</a>
+        <button class="btn btn-ghost" onclick="document.getElementById('modal-close').click()">Close</button>
+      </div>
+      <div class="modal-note" id="modal-note"></div>
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
